@@ -20,7 +20,7 @@ RUN apt-get install -y curl grep sed dpkg && \
     rm tini.deb && \
     apt-get clean
 
-RUN apt-get install -y build-essential
+RUN apt-get install -y build-essential libpython3.5 libxml2-dev libxslt-dev
 
 ENV PATH /opt/conda/bin:$PATH
 
